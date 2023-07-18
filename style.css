@@ -1,0 +1,129 @@
+:root{/*Define "variávies" de css*/
+    --Main-Text:#FFFFFF; 
+    --Sub-Text:#C0C0C0;
+    --blueBTN:#167BF7;
+    --bgColor:#00030C;
+    --fonte-principal:'Inter';
+}
+
+body{
+    background-color: var(--bgColor);
+    color: var(--Main-Text);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+/*classes são definidas com o . */
+.principal{
+    background-image: url("img/Background.png");
+    background-repeat: no-repeat;/*Impede que o background se repita*/
+    background-size: contain;/*Mantem o bg dentro do container*/
+    align-items: center;
+    text-align: center;
+}
+.container{
+    height: 100vh;/*vh é viewheight, basicamente mantem em 100% da tela*/
+    display: grid;
+    grid-template-columns: 50% 50%;
+    font-family: inter;
+}
+.container__btn{
+    background-color: var(--blueBTN);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--Main-Text);
+    display: block;
+    text-decoration: none;/*Sem sublinhado*/
+    margin-bottom: 1em;
+}
+.btn2{
+    background-color: transparent;
+    color: var(--Main-Text);
+    border: 2px solid var(--Main-Text);
+}
+.container__aviso{
+    color: var(--Sub-Text);
+    font-size: 12px;
+}
+.container__titulo{
+    font-size: 28px;
+    height: 700;
+}
+.container__img{
+    margin: 1em 0 2em 0;
+}
+.container__box{
+    margin: 0 6em;
+}
+.secundario__img{
+    width: 80%;
+}
+.secundario{
+    align-items: center;
+    margin: 0 10em;
+}
+.desc__titulo{
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--Main-Text);
+    margin-bottom: 0.2em;
+}
+.desc__text{
+    color: var(--Sub-Text);
+}
+.secundario__btn{
+    display: inline-block;
+    margin-top: 1em;
+}
+.container__desc{
+    padding: 2em;
+}
+.disp{
+    text-align: center;   
+}
+.disp__titulo{
+    font-size: 48px;
+    color: var(--Main-Text);
+}
+.disp__lista{
+    display: flex;/*Deixa os itens soltos na linha*/
+    justify-content: center;
+    list-style-type: none;/*Tira os pontinhos da lista*/
+    margin: 5em 0;
+}
+.lista__item{
+    font-size: 32px;
+}
+.rodape{
+    text-align: center;
+}
+.rodape__logo{
+   margin: 2em 0;
+}
+.rodape__lista{
+    display: flex;
+    justify-content: center;  
+    list-style-type: none;
+}
+.lista__link a{/*É possivel modificar os elementos dentro da lista especificando as tags*/
+    font-size: 16px;
+    margin: 0 1em;
+    text-decoration: none;
+    color: var(--Main-Text);
+}
+.lista__link a:hover{
+    color: var(--blueBTN);
+}
+.lista__link a:active{
+    color: darkgoldenrod;
+}
+.rodape__text{
+    color:var(--Sub-Text);
+    margin: 2em 10em;
+    font-size: 14px;
+}
